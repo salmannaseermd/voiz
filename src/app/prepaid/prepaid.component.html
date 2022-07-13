@@ -1,0 +1,696 @@
+<!-- <p>Prepaid Plans</p>
+
+
+<h2> Employee List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Pack name</th>
+            <th> pack benefits </th>
+            <th> Validity</th>
+            <th> Price </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let plans of plans">
+            <td> {{ plans.packname}} </td>
+            <td> {{ plans.packbenefits }} </td>
+            <td> {{ plans.validity }} </td>
+            <td> {{ plans.price }} </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<div class="card">
+    <div class="card-body bg-light" *ngFor="let plans of plans">
+        <h3>{{ plans.packname}}</h3>
+        <h5 class="card-title">{{ plans.price }}</h5>
+    <h6>{{ plans.packbenefits }}</h6>
+            <h6>{{ plans.validity }}</h6>
+        </div>
+        <a href="#" class="btn btn-primary">Recharge Now</a>
+    </div>
+</div> -->
+
+<div class="card mb-3" style="max-width: max-content;">
+    <div class="row g-0">
+        <div class="col-md-5">
+            <img src="prepaid_image.jpg" width="700" height="400" class="img-fluid rounded-start" alt="prepaid_image">
+        </div>
+        <div style="background-color: rgb(35, 45, 162);" class="col-md-7">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p style="color: rgb(244, 239, 242); font-size: 500%;" class="card-text">
+                    <b>Enjoy all new unlimited prepaid plans with your family</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<h1 style="text-align: center;"><b> Prepaid Mobile Plans</b></h1>
+<br>
+<div class="card text-center">
+    <div class="card-header">
+        <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-specialoffers-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-specialoffers" type="button" role="tab" aria-controls="pills-specialoffers"
+                    aria-selected="true">Special Offers</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-unlimited-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-unlimited" type="button" role="tab" aria-controls="pills-unlimited"
+                    aria-selected="false">Unlimited</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-datapacks-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-datapacks" type="button" role="tab" aria-controls="pills-datapacks"
+                    aria-selected="false">Data Packs</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-topup-tab" data-bs-toggle="pill" data-bs-target="#pills-topup"
+                    type="button" role="tab" aria-controls="pills-topup" aria-selected="true">Top Up</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-roaming-tab" data-bs-toggle="pill" data-bs-target="#pills-roaming"
+                    type="button" role="tab" aria-controls="pills-roaming" aria-selected="false">Roaming</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-otherpacks-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-otherpacks" type="button" role="tab" aria-controls="pills-otherpacks"
+                    aria-selected="false">Other Packs</button>
+            </li>
+        </ul>
+
+
+
+
+        <hr>
+
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" *ngFor="let plans of plans">
+                    <div class="card-body">
+                        <h3>{{ plans.packname}}</h3>
+                        <h5 class="card-title">{{ plans.price }}</h5>
+                        <h6>{{ plans.packbenefits }}</h6>
+                        <h6>{{ plans.validity }}</h6>
+                        <a href="#" class="btn btn-primary">Recharge Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 719</h5>
+                                    <p class="card-text">Truly Unlimited calls + 1.5 GB/Day Data + 100 SMS/Day + Xstream
+                                        Mobile Pack.
+                                        <br>
+                                    <h6>Validity: 84 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 19</h5>
+                                    <p class="card-text">1 GB data.
+                                        <br>
+                                    <h6>Validity: 1 Day</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 455</h5>
+                                    <p class="card-text">Truly Unlimited calls + 6 GB Data + 900 SMS + Apollo 24|7
+                                        Circle + Wynk music + Rs. 100 cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 84 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 479</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1.5 GB/Day Data + 100 SMS/Day +
+                                        Apollo 24|7 Circle + Wynk music + Rs. 100 cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 56 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="tab-pane fade" id="pills-unlimited" role="tabpanel" aria-labelledby="pills-unlimited-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 155</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1 GB Data + 300 SMS + Wynk
+                                        music.<br>
+                                    <h6>Validity: 24 Days </h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 179</h5>
+                                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music.<br>
+                                    <h6>Validity: 28 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 209</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1 GB/Day Data + 100 SMS/Day + Wynk
+                                        music.
+                                        <br>
+                                    <h6>Validity: 21 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 296</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 25 GB Data + 100 SMS/Day + Rs. 100
+                                        cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 299</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1.5 GB/Day Data + 100 SMS/Day +
+                                        Apollo 24|7 Circle + Wynk music +
+                                        Rs. 100 cashback on fastag + Xstream Mobile Pack.
+                                        <br>
+                                    <h6>Validity: 28 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 399</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 2.5 GB/Day Data + 100 SMS/Day +
+                                        Disney+ Hotstar Mobile Subscription
+                                        for 3 Months + Apollo 24|7 Circle + Wynk music + Rs. 100 cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 28 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 549</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 2 GB/Day Data + 100 SMS/Day +
+                                        Apollo 24|7 Circle + Wynk music +
+                                        Rs. 100 cashback on fastag + Xstream Mobile Pack.
+                                        <br>
+                                    <h6>Validity: 56 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 719</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1.5 GB/Day Data + 100 SMS/Day +
+                                        Apollo 24|7 Circle + Wynk music +
+                                        Rs. 100 cashback on fastag + Xstream Mobile Pack.
+                                        <br>
+                                    <h6>Validity: 84 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 1799</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 24 GB Data + 3600 SMS + Apollo 24|7
+                                        Circle + Wynk music + Rs. 100 cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 365 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 2999</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 2 GB/Day Data + 100 SMS/Day +
+                                        Apollo 24|7 Circle + Wynk music + Rs. 100 cashback on fastag.
+                                        <br>
+                                    <h6>Validity: 365 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="tab-pane fade" id="pills-datapacks" role="tabpanel" aria-labelledby="pills-datapacks-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 19</h5>
+                                    <p class="card-text">Get 1 GB data.<br>
+                                    <h6>Validity: 1 Day </h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 58</h5>
+                                    <p class="card-text">Get 3 GB Data.<br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 98</h5>
+                                    <p class="card-text">Get 5 GB Data + Wynk Music.
+                                        <br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 108</h5>
+                                    <p class="card-text">Get 6 GB Data + Prime Video Mobile + Wynk Music.
+                                        <br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 118</h5>
+                                    <p class="card-text">Get 12 GB Data.
+                                        <br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 148</h5>
+                                    <p class="card-text">Get 15 GB Data + Xstream Mobile Pack
+                                        <br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 301</h5>
+                                    <p class="card-text">Get 50 GB Data + Wynk Music
+                                        <br>
+                                    <h6>Validity: Existing plan</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="pills-topup" role="tabpanel" aria-labelledby="pills-topup-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 10</h5>
+                                    <p class="card-text">Get Talktime of Rs. 7.47.<br>
+                                    <h6>Validity: 0 Days Talktime: 7.47 </h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 20</h5>
+                                    <p class="card-text">Get Talktime of Rs. 14.95.<br>
+                                    <h6>Validity: 0 Days Talktime: 14.95</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 100</h5>
+                                    <p class="card-text">Get Talktime of Rs. 81.75.
+                                        <br>
+                                    <h6>Validity: 0 Days Talktime: 81.75</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 500</h5>
+                                    <p class="card-text">Get Talktime of Rs. 423.73.
+                                        <br>
+                                    <h6>Validity: 0 Days Talktime: 423.73</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 1000</h5>
+                                    <p class="card-text">Get Talktime of Rs. 847.46
+                                        <br>
+                                    <h6>Validity: 0 Days Talktime: 847.46</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 5000</h5>
+                                    <p class="card-text">Get Talktime of Rs. 4237.29.
+                                        <br>
+                                    <h6>Validity: 0 Days Talktime: 4237.29</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="pills-roaming" role="tabpanel" aria-labelledby="pills-roaming-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 496</h5>
+                                    <p class="card-text">Get Unlimited Incoming + 500 MB Data + 100 mins of Local &
+                                        India calls +
+                                        100 SMS (Covered Countries - Bangladesh, Bhutan, Myanmar, Nepal, Sri Lanka).<br>
+                                    <h6>Validity: 1 Day </h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 799</h5>
+                                    <p class="card-text">
+                                        Get 100 mins of incoming + Local/India calls.
+                                        (Covered Countries : UAE, Saudi Arabia, Malaysia, USA, Oman, Qatar, UK, Kuwait,
+                                        Singapore & more).<br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 1199</h5>
+                                    <p class="card-text">Get 100 minutes incoming ,Local & India Outgoing + 1 GB Data
+                                        (Covered Countries : UAE, Saudi Arabia, Malaysia, USA, Oman, Qatar, UK, Kuwait,
+                                        Singapore & more).
+                                        <br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 2499</h5>
+                                    <p class="card-text">Get Unlimited Incoming + 5 GB Data + 500 mins of Local & India
+                                        calls + 100 SMS
+                                        (Covered Countries - Bangladesh, Bhutan, Myanmar, Nepal, Sri Lanka).
+                                        <br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 3599</h5>
+                                    <p class="card-text">Get Unlimited Incoming + 3 GB Data + 250 mins of Local & India
+                                        calls + 100 SMS
+                                        (Covered Countries - USA, UK, Canada, Singapore, Thailand, Malasiya, Australia,
+                                        France, Germany, Netherlands, China, Indonesia, Hong Kong & more countries).
+                                        <br>
+                                    <h6>Validity: 10 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 3997</h5>
+                                    <p class="card-text">
+                                        Get Unlimited Incoming + 5 GB Data + 500 mins of Local & India calls + 100 SMS
+                                        (Covered Countries - USA, UK, Canada, Singapore, Thailand, Malasiya, Australia,
+                                        France, Germany, Netherlands, China, Indonesia, Hong Kong & more countries).
+                                        <br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 4999</h5>
+                                    <p class="card-text">Get Unlimited incoming + 1 GB/Day Data + 500 mins of local &
+                                        India calls + 100 SMS
+                                        (Covered Countries : UAE, Saudi Arabia, Malaysia, USA, Oman, Qatar, UK, Kuwait,
+                                        Singapore & more).
+                                        <br>
+                                    <h6>Validity: 10 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 6999</h5>
+                                    <p class="card-text">Get Truly Unlimited calls + 1.5 GB/Day Data + 100 SMS/Day +
+                                        Wynk music + Xstream Mobile Pack.
+                                        Get 500 mins Incoming + 500 mins Local & India calls + 5 GB Data + 100 SMS
+                                        (Covered Countries - Maldives, Nigeria, South Africa, Kenya, Uganda, Zambia &
+                                        more countries).
+                                        <br>
+                                    <h6>Validity: 30 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 8999</h5>
+                                    <p class="card-text">Get 600 mins Incoming + 600 mins India calls + 100 SMS
+                                        (Covered Countries - Iran, Kuwait, Oman, Qatar, Russia, Saudi Arabia, UAE &
+                                        more).
+                                        <br>
+                                    <h6>Validity: 180 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 14999</h5>
+                                    <p class="card-text">Get 1200 mins Incoming + 1200 mins India calls + 100 SMS
+                                        (Covered Countries - Iran, Kuwait, Oman, Qatar, Russia, Saudi Arabia, UAE &
+                                        more).
+                                        <br>
+                                    <h6>Validity: 365 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="tab-pane fade" id="pills-otherpacks" role="tabpanel" aria-labelledby="pills-otherpacks-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 99</h5>
+                                    <p class="card-text">Get Rs. 99 Talktime + 200 MB Data + Calls Local/STD/LL at 1
+                                        p/sec. No Outgoing SMS
+                                        <br>
+                                    <h6>Validity: 28 Days Talktime: 99.</h6>
+                                    </p>
+                                    </br>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">₹ 128</h5>
+                                    <p class="card-text">Get Local & STD calls 2.5p/sec + National Video Calls 5p/sec +
+                                        Data at 50p/MB +
+                                        Local SMS at Rs.1 + STD SMS at Rs.1.5 + ISD SMS Rs.5.
+                                        <br>
+                                    <h6>Validity: 28 Days</h6>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Recharge Now</a>
+                                </div>
+                            </div>
+                        </div> -->
+        <!-- </div>
+                </div> -->
+        <!-- </div> -->
+        <!-- </div>
+</div>
+
+
+</div> -->
